@@ -1,11 +1,16 @@
-from flask import Flask
+from API.Auth.auth_model import login_model
 
-app=Flask(__name__)
+def login_control(username, password):
 
-app.route("/")
+    data = login_model(username)
+    if data == None:
+        return {'unsuccessful': 'User not exists'}
+    
+    if data['password'] == password:
+        return {'successful': 'You are logged in'}
+    else:
+        return {'unsuccessful': 'incorrect password'}
 
-def login():
-    return "hello world"
 
-if __name__=="__main__":
-    app.run()
+
+
