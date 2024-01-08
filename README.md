@@ -18,7 +18,7 @@ Expense Tracker is an open-source project developed to help users manage their f
  - Implemented role-based access controls using Flask-Principal.
  - Tailored permissions for different user roles (admin, regular users) to enhance security.
 
-4. Efficient Communication
+4.Efficient Communication
 
  - Enhanced communication within the application by integrating RESTful API endpoints.
  - Facilitates efficient data retrieval and manipulation.
