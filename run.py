@@ -1,5 +1,6 @@
-from API import create_app
+from APIs import create_app
+from load_dotenv import DEBUG , PORT,HOST
 
 if __name__=='__main__':
     app=create_app()
-    app.run(debug=True,port=1250,host='0.0.0.0')
+    app.run(debug=DEBUG,port=PORT,host=HOST)
