@@ -54,7 +54,7 @@ Expense Tracker API is a Flask-based backend application designed to help users 
 
 4. Run the application:
    ```bash
-   flask run
+   python run.py
    ```
 
 ## API Documentation
