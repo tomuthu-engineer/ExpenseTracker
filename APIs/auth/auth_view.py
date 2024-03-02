@@ -8,8 +8,11 @@ from APIs.auth.auth_controller import register_contorller
 def register_view():
     '''function returns response '''
     try:
-        data = request.json
-        return register_contorller(data)
+        try:
+            data = request.json
+            return register_contorller(data)
+        except ValueError :
+            
     except Exception as e:
         return jsonify({"error":"Somthing Went Wrong"}),500
         
