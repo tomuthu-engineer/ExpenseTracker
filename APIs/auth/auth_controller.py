@@ -16,6 +16,5 @@ def register_controller(data):
         except Exception as error:
             return jsonify({'error':str(error)}),500
         
-        
     except Exception as error:
         return jsonify({'error':str(error)})
